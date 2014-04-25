@@ -189,3 +189,16 @@ colnames(data)[3]<-"Cummulative"
 
 write.csv(tidydata,"TidyData.csv")
 
+library(plyr)
+
+sub_avg <- ddply(data, c("Subjects"), summarise, Average = mean(Cummulative))
+
+Activity_avg<-ddply(data,c("Activity"),summarise,Average=mean(Cummulative))
+
+write.csv(sub_avg,"SubAvg.csv")
+
+write.csv(Activity_avg,"ActivityAvg.csv")
+
+rm(molten)
+
+
