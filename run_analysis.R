@@ -1,6 +1,13 @@
 # Getting and cleaning the data:
 # Coursera Project:
 
+# 1) Merges the train and test set into one data set.
+# 2) Extracts only the measurements on the mean and standard deviation for each measurement.
+# 3) Uses descriptive Activity names to name the activities in the data set.
+# 4) Appropriately lables the data set with descriptive activity names
+# 5) Creates a Second independent tidy data set with the average of each variables for each activity and each subject.
+
+
 rm(list=ls(all=TRUE)) 
 
 # Reading train text files:
