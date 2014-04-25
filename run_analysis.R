@@ -88,8 +88,8 @@ tail(samsungData,n=2)
 
 # Step 2: Exract mean and std columns :
 
-samsungData_mean<-samsungData[,grep('mean()',names(samsungData))]
-samsungData_std<-samsungData[,grep('std()',names(samsungData))]
+samsungData_mean<-samsungData[,grep('mean',names(samsungData))]
+samsungData_std<-samsungData[,grep('std',names(samsungData))]
 samsungData_activity<-data.frame(samsungData[,grep('Activity',names(samsungData))])
 samsungData_sub<-data.frame(samsungData[,grep('Subjects',names(samsungData))])
 
