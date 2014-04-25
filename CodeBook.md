@@ -1,4 +1,4 @@
-# This Describes the Variables, the data and transformations and the work that i have performed to clean up the data.
+This Describes the Variables, the data and transformations and the work that i have performed to clean up the data.
 
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
@@ -61,4 +61,11 @@ Notes:
 - Each feature vector is a row on the text file.
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
+
+Loading and Cleaning the data:
+==============================
+- The data is downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+- The 'x_train.txt' and 'x_test.txt' files are loaded in R
+
+
 
