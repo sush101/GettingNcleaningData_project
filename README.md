@@ -174,19 +174,14 @@ names(tidydata)[81]<-"Subjects"
 
 # 5) Create a second independent tidy data set with the avg of each variables for each activity and each subject:
 
+* # The below code uses reshape2 package:
+
 library(reshape2)
+
 molten<-melt(tidydata,id=c("Activity","Subjects"))
 
-# Reshaping:
+* # Reshaping:
 data<-dcast(molten,formula=Subjects+Activity~.)
 
 colnames(data)[3]<-"Cummulative"
-
-# library(sqldf)
-# avg_subject<-sqldf("subjects,avg(Cummulative) as occurance FROM data GROUP BY Subjects")
-# 
-# write.csv(data,"data.csv")
-
-
-
 
