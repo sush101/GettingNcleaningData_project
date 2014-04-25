@@ -172,6 +172,8 @@ names(tidydata)[80]<-"Activity"
 
 names(tidydata)[81]<-"Subjects"
 
+rm(samsungData_mean,samsungData_std,samsungData_activity,samsungData_sub)
+
 # 5) Create a second independent tidy data set with the avg of each variables for each activity and each subject:
 
 * # The below code uses reshape2 package:
