@@ -194,7 +194,9 @@ data<-dcast(molten,formula=Subjects+Activity~.)
 
 colnames(data)[3]<-"Cummulative"
 
-write.csv(tidydata,"TidyData.csv")
+write.csv(data,"Tidydata1.csv")
+
+write.csv(tidydata,"TidyData2.csv")
 
 library(plyr)
 
